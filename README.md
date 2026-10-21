@@ -1,4 +1,5 @@
-# Goal App  <img width="1899" height="828" alt="image" src="https://github.com/user-attachments/assets/bec32a2b-b485-43c4-b20c-11330228ddcd" />
+# Goal App <img width="1876" height="896" alt="image" src="https://github.com/user-attachments/assets/5c5e938a-9ea9-430e-884f-8d1a5f39321c" />
+
 
 
 A personal planning web app for organizing seasonal priorities, long-term goals, daily tasks, and meaningful accomplishments.
