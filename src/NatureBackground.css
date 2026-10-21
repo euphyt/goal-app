@@ -1,0 +1,72 @@
+.nature-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #233b2b;
+}
+
+.nature-scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nature-shade {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 28, 15, 0.18);
+}
+
+.nature-motion-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 110;
+  padding: 10px 16px;
+  font: inherit;
+  font-size: 14px;
+  color: #172b1b;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  cursor: pointer;
+}
+
+.nature-motion-button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+/* Temporary Nature preview styling */
+.app-main.nature-preview {
+  position: relative;
+  z-index: 1;
+  min-height: 100svh;
+  padding-bottom: 100px;
+}
+
+.nature-preview .home-heading h1,
+.nature-preview .home-heading p,
+.nature-preview .dashboard-header h2,
+.nature-preview .dashboard-date {
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.nature-preview .dashboard-card.navigation-card,
+.nature-preview .dashboard-section {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.nature-preview .dashboard-section {
+  padding: 28px;
+  border-radius: 24px;
+}
