@@ -1,32 +1,84 @@
-# React + TypeScript + Vite
+# Goal App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal planning web app for organizing seasonal priorities, long-term goals, daily tasks, and meaningful accomplishments.
 
-Currently, two official plugins are available:
+Built with React, TypeScript, and Vite. Currently in development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Priorities:** Add, edit, and remove priorities for the current season.
+- **Goals:** Set 3-month, 6-month, or yearly goals and organize them into milestones.
+- **Weekly planning:** Review milestone-based weekly task suggestions before adding them to a plan. Track goal progress through completed linked tasks.
+- **Daily tasks:** Organize and complete tasks for a selected day.
+- **Weekly tasks:** Manage tasks within Monday–Sunday weeks and navigate between weeks.
+- **Daily Wins:** Record accomplishments in Physical, Spiritual, Mental, and Soul categories.
+- **Calendar:** Browse months and manage dated events.
+- **Notes:** Write freely in a notes-style interface without requiring a separate title.
+- **Reminders:** Create dated reminders with in-app alerts while the app is open.
+- **Books:** Organize a Currently Reading list and a Wishlist.
+- **Profile and settings:** Customize the displayed name, bio, text size, and reminder preferences.
+- **Themes:** Choose Classic, Midnight, Earthy, Nature, Sunshine, Blue Sky, or Ocean.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Interface
 
-## Expanding the Oxlint configuration
+The home page includes a time-based greeting and navigation to each feature.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+Dedicated pages use a back arrow to return home. A floating, blurred navigation menu appears on the home page and hides when scrolling down.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## Tech Stack
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- React
+- TypeScript
+- Vite
+- CSS
+- Lucide React icons
+
+## Run Locally
+
+Requirements: Node.js and npm.
+
+Clone the repository:
+
+    git clone https://github.com/euphyt/goal-app.git
+    cd goal-app
+
+Install dependencies:
+
+    npm install
+
+Start the development server:
+
+    npm run dev
+
+Open the local URL printed in the terminal.
+
+## Production Build
+
+Build the app:
+
+    npm run build
+
+Preview the production build locally:
+
+    npm run preview
+
+## Current Limitations
+
+- No authentication or separate user accounts.
+- No database or cross-device synchronization.
+- App entries currently use React state and reset when the page reloads.
+- Reminder alerts require the app to remain open.
+- Weekly plan suggestions use milestone scheduling logic, not AI.
+- Goal planning and other workflows are still being tested and refined.
+
+## Planned Improvements
+
+- Persistent storage for entries and preferences.
+- User authentication and cloud synchronization.
+- Improved goal planning and recurring tasks.
+- Further mobile and accessibility improvements.
+- Optional AI-assisted goal breakdown with editable suggestions.
+
+## Project Status
+
+An actively developed personal project. Features and interface details may change.
